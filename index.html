@@ -43,21 +43,30 @@
     
     <script language="JavaScript">
 
-    var r_text = new Array ();
-    r_text[0] = '<h1><p><a href="https://techcrunch.com/2017/08/25/majority-of-u-s-consumers-still-download-zero-apps-per-month-says-comscore">Ninguém mais instala APP</a></p></h1>';
-    r_text[1] = '<h1><p><a href="http://www.businessinsider.com/facebook-google-dominate-app-ecosystem-2017-8"> Só Google e Facebook tem uso do APP </a></p></h1>';
+      var r_text = new Array ();
+      r_text[0] = '<h1><p><a href="https://techcrunch.com/2017/08/25/majority-of-u-s-consumers-still-download-zero-apps-per-month-says-comscore">Ninguém mais instala APP</a></p></h1>';
+      r_text[1] = '<h1><p><a href="http://www.businessinsider.com/facebook-google-dominate-app-ecosystem-2017-8"> Só Google e Facebook tem uso do APP </a></p></h1>';
 //     r_text[2] = "I've been for a walk";
 //     r_text[3] = "On a winter's day";
 //     r_text[4] = "I'd be safe and warm";
 //     r_text[5] = "If I was in L.A.";
 //     r_text[6] = "California dreaming, On such a winter's day";
-    var i = Math.floor(r_text.length * Math.random())
+      var i = Math.floor(r_text.length * Math.random())
 
-    document.write(r_text[i]);
+      document.write(r_text[i]);
+      
+      // Countdown code
+      (function countdown(remaining) {
+        if(remaining === 0)
+            location.reload(true);
+        document.getElementById('countdown').innerHTML = remaining;
+        setTimeout(function(){ countdown(remaining - 1); }, 1000);
+      })(5);
 
     </script>
   </head>
   <body>
+    <div id="countdown"></div>
     <div class="footer">Contribua com mais razões no <a href="https://go.efrem.io/github-nao-faca-app"><strong>repo do </strong> <img width="20" alt="Github Logomark" src="https://www.freeiconspng.com/uploads/github-logo-icon-30.png"></a>.</div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81215869-2"></script>
