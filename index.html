@@ -7,15 +7,14 @@
       }
       
       .header{
-        height: 40px;
-        border-bottom: 1px solid #EEE;
         color: #ffffff;
-        -webkit-border-top-left-radius: 5px;
-        -webkit-border-top-right-radius: 5px;
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-topright: 5px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        position: absolute;
+        text-align: center;
+        font-size: 200%;
+        right: 0;
+        top: 0;
+        left: 0;
+        padding: 1rem;
       }
       
       p{
@@ -87,7 +86,7 @@
       (function countdown(remaining) {
         if(remaining === 0)
             location.reload(true);
-        document.getElementById("countdown").innerHTML = remaining;
+        document.getElementById("countdown").innerHTML = "Um novo motivo em " + remaining + " para você não criar um APP";
         setTimeout(function(){ countdown(remaining - 1); }, 1000);
       })(10);
     </script>
