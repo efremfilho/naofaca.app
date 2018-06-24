@@ -23,19 +23,18 @@
         vertical-align: bottom;
       }
       
-    .center {
-      line-height: 200px;
-      height: 200px;
-      text-align: center;
-      font-size: -webkit-xxx-large;
+      .center { 
+        height: 200px;
+        position: relative;
+      }
 
-    }
-
-    .center p {
-      line-height: 1.5;
-      display: inline-block;
-      vertical-align: middle;
-    }
+      .center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
     <script language="JavaScript">
 
