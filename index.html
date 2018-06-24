@@ -1,28 +1,32 @@
 <html>
   <head>
     <style>
-    body{
-      text-align: center;
-      padding-top: 15%;
-      font-size: -webkit-xxx-large;
-    }
-    
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    
-    .footer {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      padding: 1rem;
-      background-color: #efefef;
-      text-align: center;
-      font-size: medium;
+      body{
+        text-align: center;
+        padding-top: 15%;
+        font-size: -webkit-xxx-large;
+      }
 
-    }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #efefef;
+        text-align: center;
+        font-size: medium;
+
+      }
+    
+      img {
+        vertical-align: bottom;
+      }
     </style>
     <script language="JavaScript">
 
@@ -34,7 +38,7 @@
 //     r_text[4] = "I'd be safe and warm";
 //     r_text[5] = "If I was in L.A.";
 //     r_text[6] = "California dreaming, On such a winter's day";
-    var i = Math.floor(7*Math.random())
+    var i = Math.floor(r_text.length * Math.random())
 
     document.write(r_text[i]);
 
