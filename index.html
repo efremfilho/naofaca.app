@@ -1,5 +1,12 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Motivos para não fazer um app">
+    <meta name="keywords" content="app,mobile app,web app,app ios, app android">
+    <meta name="author" content="efremfilho">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://naofaca.app/favicon.png"/>
     <style>
       
       body {
@@ -55,9 +62,9 @@
     <script language="JavaScript">
 
       var r_text = new Array ();
-      r_text[0] = '<h1><p><a href="https://techcrunch.com/2017/08/25/majority-of-u-s-consumers-still-download-zero-apps-per-month-says-comscore">Ninguém mais instala APP</a></p></h1>';
-      r_text[1] = '<h1><p><a href="http://www.businessinsider.com/facebook-google-dominate-app-ecosystem-2017-8">Só Google e Facebook tem uso do APP</a></p></h1>';
-      r_text[2] = '<h1><p><a href="https://exame.abril.com.br/tecnologia/pode-desinstalar-o-app-uber-tem-site-para-pedir-carro/">Ninguém tem memória para mais um APP</a></p></h1>';
+      r_text[0] = '<h1><p><a href="https://techcrunch.com/2017/08/25/majority-of-u-s-consumers-still-download-zero-apps-per-month-says-comscore">Ninguém mais instala app</a></p></h1>';
+      r_text[1] = '<h1><p><a href="http://www.businessinsider.com/facebook-google-dominate-app-ecosystem-2017-8">Só Google e Facebook tem uso do app</a></p></h1>';
+      r_text[2] = '<h1><p><a href="https://exame.abril.com.br/tecnologia/pode-desinstalar-o-app-uber-tem-site-para-pedir-carro/">Ninguém tem memória para mais um app</a></p></h1>';
       r_text[3] = '<h1><p><a href="https://www.appsterhq.com/blog/i-have-an-app-idea/">Ainda não é a hora</a></p></h1>';
 //      r_text[4] = '<h1><p><a href="[URL AQUI]"> [TEXTO AQUI] </a></p></h1>';
 //      r_text[5] = '<h1><p><a href="[URL AQUI]"> [TEXTO AQUI] </a></p></h1>';
@@ -71,7 +78,7 @@
   </head>
   <body>
     <div id="countdown" class="header"></div>
-    <div class="footer">Contribua com mais razões no <a href="https://go.efrem.io/github-nao-faca-app"><strong>repo do </strong> <img width="20" alt="Github Logomark" src="https://www.freeiconspng.com/uploads/github-logo-icon-30.png"></a>.</div>
+    <div class="footer">Conhece mais razões?! Contribua no <a href="https://go.efrem.io/github-nao-faca-app"><strong>repo do </strong> <img width="20" alt="Github Logomark" src="https://www.freeiconspng.com/uploads/github-logo-icon-30.png"></a>.</div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81215869-2"></script>
     <script>
@@ -86,7 +93,8 @@
       (function countdown(remaining) {
         if(remaining === 0)
             location.reload(true);
-        document.getElementById("countdown").innerHTML = "Um novo motivo em " + remaining + " para você não criar um APP";
+        if(remaining>=0)
+          document.getElementById("countdown").innerHTML = "Um novo motivo em " + remaining + " para você não criar um app";
         setTimeout(function(){ countdown(remaining - 1); }, 1000);
       })(10);
     </script>
