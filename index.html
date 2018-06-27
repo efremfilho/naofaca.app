@@ -103,7 +103,7 @@
         if(remaining === 0)
             location.reload(true);
         if(remaining>=0)
-          document.getElementById("countdown").innerHTML = "Um motivo aleatório em " + remaining + " segundos para não se criar um app";
+          document.getElementById("countdown").innerHTML = "Um motivo aleatório em " + remaining + " para não se criar um app";
         setTimeout(function(){ countdown(remaining - 1); }, 1000);
       })(10);
     </script>
